@@ -1,3 +1,4 @@
+import { UserInfo } from 'components/UserInfo';
 import { UserStat } from 'components/UserStat';
 import { UserTitle } from 'components/UserTitle';
 import React from 'react';
@@ -15,6 +16,12 @@ export const UserCard = (props: UserCardProps) => {
         {props.bio || 'This profile no bio'}
       </p>
       <UserStat followers={props.followers} repos={props.repos} following={props.following} />
+      <UserInfo
+        blog={props.blog}
+        company={props.company}
+        location={props.location}
+        twitter={props.twitter}
+      />
     </div>
   );
 };

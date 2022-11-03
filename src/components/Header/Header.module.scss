@@ -14,9 +14,23 @@
   align-items: center;
 }
 
+.logoBlock {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  svg * {
+    fill: var(--header-color);
+  }
+}
+
 .logo {
   color: var(--header-color);
   font-size: 1.75rem;
-  line-height: 1.5;
+  line-height: 1;
   font-weight: 700;
+
+  @media (max-width: 425px) {
+    font-size: 1.4rem;
+  }
 }
